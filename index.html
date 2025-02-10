@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Delgado</title>
+    <!-- Bootstrap JavaScript Bundle con Popper -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body style="background-color: #f1f1f1;">
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark pb-4" style="background-color: #2d3748;">
+    <div class="container-md">
+      <a class="navbar-brand" href="index.html">
+        <span class="fs-5 fw-bold text-white">Martin Delgado</span>
+      </a>
+      <!-- Botón Toggler -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Contenido colapsable -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-5 mb-lg-0">
+          <li class="nav-item m-1">
+            <a href="#proyectos" class="btn btn-outline-light">Projects</a>
+          </li>
+          <li class="nav-item m-1">
+            <a href="#skills" class="btn btn-outline-light">Skills</a>
+          </li>
+          <li class="nav-item m-1">
+            <a href="#sobremi" class="btn btn-outline-light">About me</a>
+          </li>
+          <li class="nav-item m-1">
+            <a href="cvc.pdf" download="cvMartinDelgado" class="btn btn-outline-light">Download cv</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+      <div class="container-sm pt-4">
+        <div class="row">
+          <!-- Columna de texto -->
+          <div class="col-8 d-flex flex-column align-items-start" style="">
+            <p class="me-2 mb-0 pt-2">Hey, i'm Martin Delgado</p>
+            <div class="d-flex ">
+              <p class="me-2 mb-0">Having experience in</p>
+              <p id="changing-text" class="text-primary fw-bold mb-0"></p>
+            </div>
+            <p class="mt-2">
+              I have two years of experience in software development, specializing in Agile environments. I am a responsible and committed professional with a strong ability to adapt and integrate into development teams seamlessly. My quick learning skills and ability to perform well under pressure allow me to contribute effectively to any project.
+            </p>
+          </div>
+          <!-- Columna con imagen centrada -->
+          <div class="col d-flex justify-content-center align-items-center" style="">
+            <img class="img-fluid rounded-circle shadow profilepic" src="img/PERFIL.jpg" alt="Profile picture">
+          </div>
+        </div>
+       
+          <div class="row pt-3 pb-3">
+            <div class="col-8 my-auto">
+              Get in Touch
+              <p>Feel free to contact me if you have any questions or just want to say hi.
+                <br>
+                gamadelgado60@gmail.com
+              </p>
+            </div>
+            <div class="col my-auto d-flex justify-content-center ">
+              <a class="p-3" href="https://www.linkedin.com/in/martin-delgado-2b6b41254">
+                <img src="img/link.png" class="iconcont" alt="">
+              </a>
+            
+              <a class="p-3" href="mailto:gamadelgado60@gmail.com">
+                <img src="img/mail.png" class="iconcont" alt="">
+              </a>
+            
+              <a class="p-3" href="https://github.com/gamadelgadodev">
+                <img src="img/gitcon.png" class="iconcont" alt="">
+              </a>
+            </div>
+            
+        </div>
+      </div>
+
+    
+      <div id="proyectos"></div>
+      <br><br><br>
+      <div class="container-sm rounded bg-light">
+        <div class="row border-bottom border-3">
+            <div class="row p-2">
+                <div class="col-12 d-flex justify-content-center">
+                    <h3 class="display-3">Projects</h3>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row pb-4 g-3">
+          <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card h-100 border-secondary">
+                  <a class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#Modal1">
+                      <img src="img/projects/MyCount2.png" class="card-img-top img-fluid fixed-image" alt="Database Project">
+                      <div class="card-body d-flex flex-column">
+                          <h5 class="card-title">My Count</h5>
+                          <p class="card-text">My Count is a personal project for personal use. It is used as an expense/income tracker.</p>
+                      </div>
+                  </a>
+              </div>
+          </div>
+  
+          <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card h-100 border-secondary">
+                  <a class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#Modal2">
+                      <img src="img/proy2.PNG" class="card-img-top img-fluid fixed-image mt-4" alt="Systems Software Project">
+                      <div class="card-body d-flex flex-column">
+                        <br>
+                          <h5 class="card-title">Custom Compiler for Assembly-Like Language </h5>
+                          <p class="card-text">School project of a compiler with its own grammar, in which code could be inputted and it was able to detect lexical and grammatical errors.</p>
+                      </div>
+                  </a>
+              </div>
+          </div>
+  
+          <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card h-100 border-secondary">
+                  <a class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#Modal3">
+                      <img src="img/proy1.PNG" class="card-img-top img-fluid fixed-image" alt="Web Development Project">
+                      <div class="card-body d-flex flex-column">
+                          <h5 class="card-title">Database Project</h5>
+                          <p class="card-text">Database project with Java, where data is stored in PostgreSQL. It is a system that stores music information.</p>
+                      </div>
+                  </a>
+              </div>
+          </div>
+      </div>
+
+        <div class="row pb-4 g-3">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 border-secondary">
+                    <a class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#Modal4">
+                      <br>
+                        <img src="img/proy3.PNG" class="card-img-top img-fluid fixed-image pt-4" alt="Database Project">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Evaluation System</h5>
+                            <p class="card-text">project for evaluation in competitions, developed for my university in which I collaborated with two colleagues.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 border-secondary">
+                    <a class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#Modal2">
+                        <img src="img/proy2.PNG" class="card-img-top img-fluid fixed-image" alt="Systems Software Project">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Systems Software Project</h5>
+                            <p class="card-text">Desarrollo de software de sistemas para optimizar procesos internos y mejorar la eficiencia operativa.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 border-secondary">
+                    <a class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#Modal3">
+                        <img src="img/proy3.PNG" class="card-img-top img-fluid fixed-image" alt="Web Development Project">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Web Development Project</h5>
+                            <p class="card-text">Diseño y desarrollo de un sitio web moderno y responsivo para una empresa de tecnología.</p>
+                        </div>
+                    </a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    
+    
+    <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">My Count</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="container">
+              <img src="img/projects/MyCount1.png" class="img-fluid zoom-img" alt="Project Image">
+    
+              <!-- Segunda fila: Descripción y Tecnologías -->
+              <div class="row mt-4">
+                <div class="col-md-8">
+                  <h4>Project Details</h4>
+                  <p>
+                    My Count is a personal project designed for tracking expenses and incomes efficiently. It allows me to manage multiple accounts, organizing them according to my needs. The system generates insightful charts based on a selected time period and specific accounts, providing a clear financial overview. Additionally, expenses and incomes are categorized for better tracking and analysis.
+                  </p>
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <div class="technologies-logos d-flex gap-3">
+                    <img src="img/dotnet.png" alt="c#" class="tech-logo" title="c#">
+                    <img src="img/angular.png" alt="angular" class="tech-logo" title="Angular">
+                    <img src="img/msql.png" alt="msql" class="tech-logo" title="msql">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal-footer">
+            <a href="https://github.com/gamadelgadodev/MyCount" type="button" class="btn btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+            </a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Lexer</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="container">
+              <img src="img/proy2.PNG" class="img-fluid zoom-img" alt="Project Image">
+    
+              <!-- Segunda fila: Descripción y Tecnologías -->
+              <div class="row mt-4">
+                <div class="col-md-8">
+                  <h4>Project Details</h4>
+                  <p>
+                    This is a school project developed using C# and Windows Forms. It features the implementation of a lexer and a grammar to compile and execute a syntax similar to assembly language. The goal of this project is to gain a deeper understanding of how programming languages work at a fundamental level.
+                  </p>
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <div class="technologies-logos d-flex gap-3">
+                    <img src="img/Csharp_Logo.png" alt="c#" class="tech-logo" title="c#">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal-footer">
+            <a href="https://github.com/gamadelgadodev/lexer" type="button" class="btn btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+            </a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Database project</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="container">
+              <img src="img/proy1.PNG" class="img-fluid zoom-img" alt="Project Image">
+    
+              <!-- Segunda fila: Descripción y Tecnologías -->
+              <div class="row mt-4">
+                <div class="col-md-8">
+                  <h4>Project Details</h4>
+                  <p>
+                    Database project, this project was a school project and consisted of making a database system, the communication was through java and postgres, so that we could store basic communication was through java and postgres so that we could store basic music information in several tables.
+                  </p>
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <div class="technologies-logos d-flex gap-3">
+                    <img src="img/java.png" alt="c#" class="tech-logo" title="c#">
+                    <img src="img/postgresql.png" alt="c#" class="tech-logo" title="c#">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal-footer">
+            <a href="https://github.com/gamadelgadodev/javapostgres" type="button" class="btn btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+            </a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Evaluation System</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="container">
+              <img src="img/proy3.PNG" class="img-fluid zoom-img" alt="Project Image">
+    
+              <!-- Segunda fila: Descripción y Tecnologías -->
+              <div class="row mt-4">
+                <div class="col-md-8">
+                  <h4>Project Details</h4>
+                  <p>
+                    Project done by a team composed of two colleagues along with me which consists of a web page made for a client which had every few events in which judges have to evaluate the process was 
+        The page optimized this and get the calculations in seconds once the judges give their verdicts, this being a project for a client I can not show the code.
+                  </p>
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <div class="technologies-logos d-flex gap-3">
+                    <img src="img/laravel.png" alt="laravel" class="tech-logo" title="laravel">
+                    <img src="img/msql.png" alt="msql" class="tech-logo" title="msql">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+      <br>
+      <br>
+      <div class="container-fluid" style="background-color: #2d3748;" id="skills">
+        <div class="container-sm">
+          <div class="row pt-3 pb-3">
+            <div class="col-12 d-flex justify-content-center  border-3 ">
+              <h3 style="color: white;">Skills</h3>
+            </div>
+            <div class="row border border-secondary p-2">
+              <h4 class="" style="color: white;">Backend</h4>
+              <p style="color: white;">It's my area of greatest expertise, where I enjoy solving problems, designing solutions, and updating/reconstructing legacy code.</p>
+              <div class="col pt-3 d-flex justify-content-center border-3 " >
+                <btn class="btn btn-outline-light" href="">
+                  <img src="img/Csharp_Logo.png" class="iconolng" alt="">
+                    Csharp 
+                    <br>
+                    .Net, Entity framework, WinForms,etc.. 
+
+                    <br>
+                    Experiece: 3 years
+                </btn>
+              </div>
+              <div class="col pt-3 d-flex justify-content-center ">
+                <btn class="btn btn-outline-light" href="">
+                  <img src="img/java.png" class="iconolng" alt="">
+                    
+                    laravel
+                    <br>
+                    spring boot, Java Forms, etc...
+                    <br>
+                    Experiece: 2 years
+                </btn>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <btn class="btn btn-outline-light" href="">
+                  <img src="img/php.png" class="iconolng" alt="">
+                    
+                    PHP
+                    <br>
+                    <br>
+                    laravel, composer, symfony, etc..
+                    <br>
+                    Experiece: 1 years
+                </btn>
+                </div>
+              </div>
+              
+              <div class="row border border-secondary mt-2 p-2">
+                <h4 class="" style="color: white;">Frontend</h4>
+                <p style="color: white;">I enjoy frontend development because it allows me to approach design in unique ways while always keeping the user in mind. I believe that even small changes can significantly improve both design and functionality.</p>
+                <div class="col  d-flex justify-content-center">
+                  <btn class="btn btn-outline-light" href="">
+                    <img src="img/angular.png" class="iconolng" alt="">
+                      Angular
+                      <br>
+                      Experiece: 2 years
+                  </btn>
+                </div>
+                <div class="col pt-3 d-flex justify-content-center">
+                  <btn class="btn btn-outline-light" href="">
+                    <img src="img/htmlf.webp" class="iconolng" alt="">
+                      HTML
+                      <br>
+                      bootstrap, tailwind
+                      <br>
+                      Experiece: 2 years
+
+                  </btn>
+                </div>
+                <div class="col pt-3 d-flex justify-content-center">
+                  <btn class="btn btn-outline-light" href="">
+                    <img src="img/css.png" class="iconolng" alt="">
+                      CSS
+                      <br>
+                      Experiece: 2 years
+                  </btn>
+                </div>
+              </div>
+
+              <div class="row border border-secondary mt-2 p-2">
+                <h4 class="" style="color: white;">Database</h4>
+                <p style="color: white;">Working with databases is very rewarding because a good implementation, following normalization rules and design principles, can make it easy to update, query information, and perform analysis.</p>
+                <div class="col  d-flex justify-content-center">
+                  <btn class="btn btn-outline-light" href="">
+                    <img src="img/msql.png" class="iconolng" alt="">
+                      Msql
+                      <br>
+                      Experiece: 3 years
+                  </btn>
+                </div>
+                <div class="col pt-3 d-flex justify-content-center">
+                  <btn class="btn btn-outline-light" href="">
+                    <img src="img/postgresql.png" class="iconolng" alt="">
+                      PostgreSQL
+                      <br>
+                      Experiece: 2 years
+
+                  </btn>
+                </div>
+                <div class="col pt-3 d-flex justify-content-center">
+                  <btn class="btn btn-outline-light" href="">
+                    <img src="img/mongodb.png" class="iconolng" alt="">
+                    Mongo db
+                      <br>
+                      Experiece: 1 years
+                  </btn>
+                </div>
+              </div>
+
+
+              <div class="row border border-secondary mt-2 p-2">
+                <h4 class="" style="color: white;">Miscellaneous</h4>
+                <p style="color: white;">Miscellaneous: I work with various technologies that don't strictly fall under frontend or backend, but still play a crucial role in development</p>
+                <div class="col  d-flex justify-content-center">
+                  <btn class="btn btn-outline-light" href="">
+                    <img src="img/linux.png" class="iconolng" alt="">
+                      Linux
+                      <br>
+                      Experiece: 4 years
+                  </btn>
+                </div>
+                <div class="col pt-3 d-flex justify-content-center">
+                  <btn class="btn btn-outline-light" href="">
+                    <img src="img/bash.png" class="iconolng" alt="">
+                      Bash
+                      <br>
+                      Experiece: 3 years
+
+                  </btn>
+                </div>
+                <div class="col pt-3 d-flex justify-content-center">
+                  <btn class="btn btn-outline-light" href="">
+                    <img src="img/server.png" class="iconolng" alt="">
+                    
+                      <br>
+                      iis , linux vms
+                      <br>
+                      Experiece: 2 years
+                  </btn>
+                </div>
+                <div class="col pt-3 d-flex justify-content-center">
+                  <btn class="btn btn-outline-light" href="">
+                    <img src="img/git.png" class="iconolng" alt="">
+                    GIT
+                      <br>
+                      Experiece: 3 years
+                  </btn>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+
+
+      <div class="container mt-5">
+        <h2 class="text-center mb-4">Experiece</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+                <h4>FullStack Developer- Freelance</h4>
+                <p class="text-muted">Sep 2023 - Present</p>
+            </div>
+            <div class="timeline-content right">
+                <p>Freelance developer with experience in designing and maintaining custom web applications. Specialized in optimizing performance, implementing multitenant architectures, and integrating third-party services. Collaborated with clients to understand requirements and deliver tailored solutions</p>
+            </div>
+        </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h4>FullStack Developer- Tecnolika</h4>
+                    <p class="text-muted">June 2022 - Sep 2023</p>
+                </div>
+                <div class="timeline-content right">
+                    <p>Design of multitenant architecture and development of middleware for its management. Promoted from intern to developer based on performance. Optimized query execution time from 5 minutes to under 1 second. Configured environment for a partially completed project from a software company in India.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h4>Software Developer Intern - Tecnolika</h4>
+                    <p class="text-muted">Jan 2022 - Jun 2022</p>
+                </div>
+                <div class="timeline-content right">
+                    <p>Development and maintenance of legacy projects, optimization of query execution times, and assistance in architecture design for a survey system, including plant visits for requirements gathering</p>
+                </div>
+            </div>
+        </div>
+    </div>
+      <div class="container-sm rounded bg-light " id="sobremi">
+        <div class="row border-bottom border-3">
+          <div class="row  p-2">
+            <div class="col-12 d-flex justify-content-center">
+                <h3 class="display-3 ">About me</h3>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+          <p> </p>
+            <br>
+        </div>
+        <div class="row">
+            <p>I am a Computer Engineering graduate from UASLP, one of the best universities in Mexico. At 26 years old, I am highly committed, hardworking, and a family-oriented individual. My time at university and previous work experiences have helped me grow both personally and professionally. I am seeking an opportunity where I can further develop my skills while contributing what I already know.
+              <br>
+              In my free time, I usually focus on personal interests such as playing music (electric bass), working on personal projects, reading, repairing old items like computers, consoles, and more. I also play a bit of video games.
+            </p>
+          </div>
+          <div class="row">
+            
+          </div>
+          <br>
+          <img src="img/podio.png" class="card-img-top img-fluid mt-4" alt="Systems Software Project">
+          
+        </div>
+
+      <br>
+      <br>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      
+
+      <br>
+        
+        <br>
+    <div class="footer container-fluid">
+      <div class="container-fluid p-1 rounded-top" style="background-color: #2d3748;">
+        <div class="container-sm">
+          
+        </div>
+        <br><br>
+        <h6 class="" style="color: white;">Designed and developed by Martin Delgado © 2025
+          </h6>
+      </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</html>
